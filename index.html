@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Private PayPal - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-box {
+            background: white;
+            width: 360px;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .login-box h1 {
+            color: #0070ba;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .login-box p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 20px;
+            background-color: #0070ba;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>My Private PayPal</h1>
+        <p>Sign in to your account</p>
+        <input type="email" id="email" placeholder="Email or Username">
+        <input type="password" id="password" placeholder="Password">
+        <button class="login-btn" onclick="login()">Sign In</button>
+    </div>
+    <script>
+        function login() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            if (email === "nn4470999@gmail.com" && password === "1957") {
+                window.location.href = "security.html";
+            } else {
+                alert("Incorrect email or password");
+            }
+        }
+    </script>
+</body>
+</html>
